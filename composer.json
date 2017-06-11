@@ -1,0 +1,18 @@
+{
+    "name": "drupalway/drupal-bricky-project",
+    "description": "Project template for Bricky projects with composer",
+    "type": "project",
+    "require": {
+        "composer/installers": "^1.3",
+        "drupal-composer/drupal-scaffold": "^2.3",
+        "cweagans/composer-patches": "^1.6"
+    },
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Vlad Moyseenko",
+            "email": "vlad.dancer@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
