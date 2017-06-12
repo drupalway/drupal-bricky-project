@@ -4,11 +4,9 @@
     "type": "project",
     "require": {
         "composer/installers": "^1.2",
-        "drupal-composer/drupal-scaffold": "^2.3",
         "cweagans/composer-patches": "^1.6",
         "drupalway/drupal-bricky": "dev-initial_profile_version",
-        "drupal/core": "^8.3",
-        "webflo/drupal-finder": "^0.3.0"
+        "drupal-composer/drupal-scaffold": "^2.2"
     },
     "license": "GPL-2.0+",
     "authors": [
@@ -35,13 +33,17 @@
             "docroot/libraries/{$name}": ["type:drupal-library"],
             "docroot/modules/contrib/{$name}": ["type:drupal-module"],
             "docroot/profiles/contrib/bricky": ["drupalway/drupal-bricky"],
-            "docroot/themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/contrib/{$name}": ["type:drupal-drush"]
+            "docroot/themes/contrib/{$name}": ["type:drupal-theme"]
         },
         "enable-patching": true
     },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
     "minimum-stability": "dev",
+    "prefer-stable": true,
     "config": {
+        "sort-packages": true,
         "bin-dir": "vendor/bin/",
         "secure-http": false
     }
