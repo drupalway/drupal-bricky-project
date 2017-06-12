@@ -15,12 +15,7 @@ If you do not have [Composer](http://getcomposer.org/), you may install it by fo
 
 #### Latest STABLE version
 ```
-composer create-project drupalway/bricky-project MY_PROJECT --no-interaction --no-dev
+composer create-project drupalway/drupal-bricky-project MY_PROJECT --no-interaction --no-dev
 ```
 
 This command will build project based on [**latest stable**](https://github.com/ymcatwincities/openy/releases) release.
-
-#### Latest DEVELOPMENT version
-```
-composer create-project drupalway/bricky-project:8.1.x-dev MY_PROJECT --no-interaction --no-dev
-```
